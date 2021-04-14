@@ -24,6 +24,7 @@ function onSelect(element) {
     selectedAnswer = element.value;
 }
 
+//Adding to round count and checking for "Correct Answer" to add points. Check if last round (sixth)
 function onSubmit() {
     rounds += 1;
     if(rounds === 6) {
@@ -36,6 +37,7 @@ function onSubmit() {
         $('#exampleModal').modal('toggle');
         rounds = 0
         points = 0
+        // if true end 
         return 
 
     }
