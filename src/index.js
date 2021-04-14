@@ -7,24 +7,6 @@ var selectedAnswer;
 var points= 0;
 var rounds = 0;
 
-block.addEventListener ("click" , changeColor)
-
-function changeColor(){  
-    
-    console.log(block.style.background);
-   
-    if ( block.style.background === "rgb(167, 188, 222)")
-    {
-        block.style.background = "#f03e3e";
-        
-
-    }
-    else{
-        block.style.background= "#A7BCDE";
-
-    }
-}
-
 
 // Function to get a random item from an array
 function getRandomItem(arr) {
